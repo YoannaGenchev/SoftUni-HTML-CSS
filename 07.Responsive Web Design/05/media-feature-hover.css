@@ -1,0 +1,55 @@
+/* 1. Reset & base */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* 2. Banner pseudo-element (hidden by default) */
+body::before {
+  display: none;
+  background-color: #369;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+}
+
+/* 3. (hover: none) */
+@media (hover: none) {
+  body::before {
+    display: block;
+    content: 'The device does NOT support hover';
+  }
+}
+
+/* 4. (hover: hover) */
+@media (hover: hover) {
+  body::before {
+    display: block;
+    content: 'The device does support hover';
+  }
+}
+
+/* 5. Headings & code styling */
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+code {
+  font-family: monospace;
+}

@@ -1,0 +1,65 @@
+/* RESET & BOX-SIZING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY & CONTAINER */
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  padding: 2rem 1rem;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* TABLE CARD WRAPPER */
+.table-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+/* OPTIONAL TITLE BAR */
+.table-card-header {
+  padding: 1.5rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #acacac;
+  font-style: bold;
+}
+
+/* MAKE TABLE SCROLLABLE ON SMALL SCREENS */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* TABLE STYLING */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead th {
+  background: #dddddd;
+  font-weight: 600;
+  text-align: left;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #dbd6d6;
+  white-space: nowrap;
+}
+/* remove bottom border on last row */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* HIDE HORIZONTAL SCROLLBAR (optional) */
+ .table-responsive::-webkit-scrollbar { height: 6px; }
+.table-responsive::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 3px; } 

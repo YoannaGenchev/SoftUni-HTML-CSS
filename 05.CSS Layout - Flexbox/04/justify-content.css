@@ -1,0 +1,55 @@
+/* Базови стилове и типография */
+body {
+  font-family: sans-serif;
+  padding: 0em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 1.5em 0 0.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера и елементите */
+.flex-container {
+  width: 400px;
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  margin-bottom: 2em; /* разстояние между примерите */
+}
+
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+/* Класове за justify-content */
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  width: 360px;
+}
+
+.section + .section {
+  margin-top: 32px;
+}
+.section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 19px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  user-select: none;
+}
+.radio-label input {
+  display: none;
+}
+.custom-radio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 12px;
+}
+.custom-radio::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c16b00;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s;
+}
+
+.radio-label input:checked + .custom-radio {
+  background: #ff8c00;
+  border-color: #ff8c00;
+}
+.radio-label input:checked + .custom-radio::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.label-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  user-select: none;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  width: 50px;
+  height: 24px;
+  background: #eee;
+  border-radius: 12px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c16b00;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+.switch input:not(:checked) + .slider::before {
+  transform: translateX(26px);
+}
+
+.switch input:checked + .slider {
+  background: #ff8c00;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(0);
+}
+
+.switch .label-text {
+  margin-left: 12px;
+  font-size: 1rem;
+  color: #333;
+}

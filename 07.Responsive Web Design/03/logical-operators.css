@@ -1,0 +1,43 @@
+/* — Reset & base (all) — */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+
+
+@media (max-width: 500px), (orientation: portrait) {
+  body::before {
+    display: block;
+    content: 'Viewport ≤500px OR portrait';
+  }
+}
+
+/* — or — */
+@media (max-width: 500px) or (orientation: portrait) {
+  body::before {
+    display: block;
+    content: 'Viewport ≤500px OR portrait (using or)';
+  }
+}
+
+/* — Typography & code styling — */
+h1 {
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  margin: 1em 0 em;
+  font-size: 2em;
+  font-weight: bold;
+}
+

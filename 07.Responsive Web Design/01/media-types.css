@@ -1,0 +1,60 @@
+/* 1. Reset & base inside the “all” media query */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* 2. The ::before banner, styled always but shown only in print or screen */
+body::before {
+  display: none;
+  background-color: #369;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+}
+
+/* 3. Show banner in print */
+@media print {
+  body::before {
+    display: block;
+    content: 'The page is using a print preview or it was printed';
+  }
+}
+
+/* 4. Show banner in screen */
+@media screen {
+  body::before {
+    display: block;
+    content: 'The page is being shown on a screen';
+  }
+}
+
+/* 5. Small styling touches for code blocks & links */
+pre {
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+}
+
+.doclink {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1em;
+}

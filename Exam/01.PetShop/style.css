@@ -1,0 +1,108 @@
+/* 1) RESET & BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+/* 2) OUTER WRAPPER */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 3) LEFT IMAGE SIDE */
+.image-side {
+  flex: 1;
+}
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 4) RIGHT CONTENT SIDE */
+.content-side {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* “About Us” label */
+.about-label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #71c93a;
+}
+
+/* 5) HEADING BLOCK */
+.heading-block {
+  background: #f3f3f3;
+  padding: 1.5rem;
+  border-left: 4px solid #71c93a;
+}
+.heading-block h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* 6) INTRO TEXT */
+.intro-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+/* 7) TAB SECTION */
+.tab-section {
+  width: 100%;
+}
+.tabs {
+  display: flex;
+}
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  background: #e6e6e6;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tab.active {
+  background: #71c93a;
+  color: #fff;
+}
+.tab:not(.active):hover {
+  background: #d4d4d4;
+}
+
+/* TAB CONTENT */
+.tab-content {
+  background: #f3f3f3;
+  padding: 1rem;
+  margin-top: -4px; /* overlap the bottom border of tabs */
+}
+
+/* Paragraph inside tab */
+.tab-content p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #444;
+}

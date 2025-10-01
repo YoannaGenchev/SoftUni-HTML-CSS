@@ -1,0 +1,24 @@
+body {
+  font-family: Georgia, serif;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Общи стилове за двете кутии */
+.box {
+  width: 350px;
+  padding: 20px;
+  border: 5px solid #333;
+  margin-bottom: 20px;
+  background: #eee;
+}
+
+/* Content-box: default */
+.content-box {
+  box-sizing: content-box;
+}
+
+/* Border-box: включва padding и border в width */
+.border-box {
+  box-sizing: border-box;
+}

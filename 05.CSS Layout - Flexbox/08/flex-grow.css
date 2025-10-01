@@ -1,0 +1,48 @@
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 1em 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера и елементите */
+.flex-container {
+  width: 400px;
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+  /* По подразбиране flex-grow: 0; */
+}
+
+/* flex-grow: 1 за всички елементи */
+.flex-grow-one .flex-item {
+  flex-grow: 1;
+}
+
+/* flex-grow: 1 само за второто дете */
+.flex-grow-2nd-only .flex-item:nth-child(2) {
+  flex-grow: 1;
+}
+
+/* flex-grow пропорционално (1, 2, 3) */
+.flex-grow-proportional .flex-item:nth-child(1) {
+  flex-grow: 1;
+}
+.flex-grow-proportional .flex-item:nth-child(2) {
+  flex-grow: 2;
+}
+.flex-grow-proportional .flex-item:nth-child(3) {
+  flex-grow: 3;
+}

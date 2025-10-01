@@ -1,0 +1,245 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  background: #bcb6b5;           /* from the screenshot */
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* --------------------------------------------------------
+   3) SITE HEADER
+-------------------------------------------------------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo-text {
+  font-family: 'Oleo Script', serif;
+  font-size: 1.75rem;
+  color: #fff;
+  background: #3cad9f;
+  padding: 0.25rem 1rem;
+  border-radius: 4px;
+}
+.logo-highlight { color: #fff; }
+.byline {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+nav ul li a {
+  font-weight: 600;
+  color: #333;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* --------------------------------------------------------
+   4) HERO SECTION
+-------------------------------------------------------- */
+.hero {
+  margin: 2rem;
+  background: #fff;
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  color: #666;
+}
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn-primary {
+  background: #009ad8;
+  color: #fff;
+}
+.btn-primary:hover { background: #007bb5; }
+.btn-secondary {
+  background: #f2f2f2;
+  color: #444;
+}
+.btn-secondary:hover { background: #e0e0e0; }
+
+/* --------------------------------------------------------
+   5) FEATURE CARDS
+-------------------------------------------------------- */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+.card {
+  background: #fff;
+  width: 280px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card-img {
+  width: 100%;
+  display: block;
+}
+.card-body {
+  padding: 1rem;
+}
+.card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.card-sub {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+.card-text {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* --------------------------------------------------------
+   6) INFO SECTION
+-------------------------------------------------------- */
+.info {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 6px;
+}
+.info-left,
+.info-right {
+  flex: 1;
+}
+.info-left h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.thumbs img {
+  width: 100%;
+  border-radius: 4px;
+}
+.info-left .btn-secondary {
+  font-size: 0.9rem;
+}
+.info-right h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.info-right .intro-text {
+  margin-bottom: 1rem;
+  color: #666;
+}
+.info-right p {
+  font-size: 0. ninerem;
+  margin-bottom: 1.5rem;
+}
+.info-right .btn-primary {
+  font-size: 0. ninerem;
+}
+
+/* --------------------------------------------------------
+   7) FOOTER
+-------------------------------------------------------- */
+.site-footer {
+  margin-top: 2rem;
+  background: #bcb6b5;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+.footer-top .col {
+  flex: 1;
+}
+.footer-top h5 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+.footer-top ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-top ul li a {
+  font-size: 0.85rem;
+  color: #444;
+}
+.contact-us .social {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.contact-us .social a {
+  font-size: 1.25rem;
+  color: #444;
+  transition: color 0.2s;
+}
+.contact-us .social a:hover {
+  color: #000;
+}
+.contact-us address {
+  font-style: normal;
+  font-size: 0. ninerem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------
+   8) COPYRIGHT
+-------------------------------------------------------- */
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0. eightrem;
+  color: #444;
+}

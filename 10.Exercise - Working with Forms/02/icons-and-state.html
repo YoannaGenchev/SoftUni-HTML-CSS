@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="icons-and-state.css" />
+</head>
+<body>
+  <div class="login-card">
+    <h2>Login</h2>
+    <div class="underline"></div>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="email">
+          Email <span class="required">*</span>
+        </label>
+        <div class="input-wrapper">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=" "
+            required
+          />
+          <span class="material-icons icon">mail_outline</span>
+        </div>
+        <small class="hint">
+          example: konstantin.dankov@gmail.com
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="password">
+          Password <span class="required">*</span>
+        </label>
+        <div class="input-wrapper">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder=" "
+            required
+          />
+          <span class="material-icons icon">vpn_key</span>
+        </div>
+        <small class="hint">
+          minimum 6 characters, letters and numbers, at least 1 special character
+        </small>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+</body>
+</html>

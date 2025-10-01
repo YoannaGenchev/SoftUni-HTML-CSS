@@ -1,0 +1,103 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+/* keyboard background */
+.keyboard {
+  background: #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* each row */
+.row {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* base key style */
+.key {
+  background: #f9f9f9;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: inset 0 -2px #ddd;
+  text-align: center;
+  padding: 0.5em 0.8em;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* consistent small keys */
+.key.small {
+  flex: 0 0 2.2em;
+}
+
+/* standard keys */
+.key:not(.small):not(.wide):not(.tall):not(.space) {
+  flex: 0 0 3.8em;
+}
+
+/* wide keys */
+.key.wide {
+  flex: 0 0 6.5em;
+}
+
+/* tall (enter) */
+.key.tall {
+  flex: 0 0 3.8em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* space bar */
+.key.space {
+  flex: 1;
+  border-radius: 4px;
+  box-shadow: none;
+  background: #f9f9f9;
+  border: 1px solid #aaa;
+  background: #ddd;      /* по-тъмен със светъл тон */
+  color: #333;
+}
+.key.edge {
+  background: #ddd;      /* по-тъмен със светъл тон */
+  color: #333;
+}
+.key.enter {
+  background:  #ddd;
+  color: #333;
+  /* абзац в grid-а: заемат 2 колони и 2 реда */
+  grid-column: 14 / 16;
+  grid-row: 4/ 6;
+  clip-path: polygon(
+    0%   0%,    /* горен ляв ъгъл */
+    100% 0%,    /* горен десен ъгъл */
+    100% 35%,   /* надолу по дясната страна до 35% */
+    60%  35%,   /* хоризонтално към 60% ширина */
+    60%  100%,  /* надолу до долния ръб (60% ширина) */
+    0%   100%   /* долен ляв ъгъл */
+  );
+}
+.key.backspace {
+  background: #ddd;
+  color: #333;
+}
+.key.caps-lock    { grid-column: 1 / 3; }
+.key.key.caps-lock {
+  background:  #ddd;
+  color: #333;
+
+  width: calc(2 * var(--key-width) + var(--gap));
+}

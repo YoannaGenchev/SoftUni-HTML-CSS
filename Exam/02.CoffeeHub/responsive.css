@@ -1,0 +1,249 @@
+/* Mobile Responsive Styles - width <= 600px */
+@media screen and (max-width: 600px) {
+  
+  /* Body and container adjustments */
+  body {
+    font-size: 16px;
+  }
+  
+  .home-container {
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Navbar responsive styling */
+  .home-navbar {
+    flex-direction: row;
+    padding: 2px 0px;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .home-links-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: 60%;
+  }
+  
+  .home-link,
+  .home-link1,
+  .home-link2,
+  .home-link3 {
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+  
+  .home-cta-container {
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .home-cta-btn {
+    padding: 10px 2px;
+    font-size: 8px;
+  }
+  
+  /* Hero section responsive styling */
+  .home-hero {
+    flex-direction: column-reverse;
+    padding: 20px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .home-hero-text-container {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .home-heading {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  
+  .home-text02 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  
+  .home-cta-btn2 {
+    padding: 14px 24px;
+    font-size: 14px;
+    max-width: 200px;
+  }
+  
+  .home-image1 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Features section responsive styling */
+  .home-features {
+    height: auto;
+    padding: 20px 16px;
+  }
+  
+  .home-heading-container {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .home-text03 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  
+  .home-text04 {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 8px;
+  }
+  
+  .home-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .home-feature-card,
+  .home-feature-card1,
+  .home-feature-card2 {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .home-image2,
+  .home-image3,
+  .home-image4 {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 16px;
+  }
+  
+  .home-heading1,
+  .home-heading2,
+  .home-heading3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .home-text05,
+  .home-text06,
+  .home-text07 {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 8px;
+  }
+  
+  /* Stats section responsive styling */
+  .home-stats {
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 16px;
+    grid-gap: 24px;
+  }
+  
+  .home-stat,
+  .home-stat1,
+  .home-stat2,
+  .home-stat3 {
+    padding: 16px;
+  }
+  
+  .home-text08,
+  .home-text13,
+  .home-text17,
+  .home-text22 {
+    font-size: 2.2rem;
+  }
+  
+  .home-text11,
+  .home-text15,
+  .home-text20,
+  .home-text24 {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  
+  .home-text12,
+  .home-text16,
+  .home-text21,
+  .home-text25 {
+    font-size: 0.7rem;
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+  
+  /* Typography adjustments for mobile */
+  .Section-Heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  
+  .Card-Heading {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  
+  .Anchor {
+    font-size: 16px;
+  }
+  
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Additional spacing adjustments */
+  .home-navbar-container {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Button hover effects for mobile */
+  .home-cta-btn:active,
+  .home-cta-btn2:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Extra small devices (width <= 400px) */
+@media screen and (max-width: 400px) {
+  .home-heading {
+    font-size: 28px;
+  }
+  
+  .home-text03 {
+    font-size: 24px;
+  }
+  
+  .home-stats {
+    grid-template-columns: 1fr;
+    padding: 20px 12px;
+  }
+  
+  .home-text08,
+  .home-text13,
+  .home-text17,
+  .home-text22 {
+    font-size: 2rem;
+  }
+  
+  .home-hero,
+  .home-features {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

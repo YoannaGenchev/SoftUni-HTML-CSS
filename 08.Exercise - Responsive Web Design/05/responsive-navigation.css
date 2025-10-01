@@ -1,0 +1,95 @@
+/* 1) RESET + BOX-SIZING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2) BODY & CARD CONTAINER */
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.nav-container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* 3) HIDDEN TOGGLER */
+.nav-toggle {
+  display: none;
+}
+
+/* 4) HEADER ROW */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+.nav-header h1 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+/* 5) MENU BUTTON */
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1.5rem 1.5rem;
+  background: #eee;
+  border-radius: 4px;
+  position: relative;
+}
+/* label text via pseudo */
+.nav-toggle + .nav-header .menu-btn::before {
+  content: "Open Menu";
+  color: #000;
+  font-size: 1rem;
+}
+/* when checked, change text */
+.nav-toggle:checked + .nav-header .menu-btn::before {
+  content: "Close Menu";
+}
+
+/* 6) THE COLLAPSIBLE MENU */
+.menu {
+  display: none;
+  padding-bottom: 2rem; /* a little breathing room at bottom */
+}
+.nav-toggle:checked ~ .menu {
+  display: block;
+}
+
+/* 7) MENU STYLING */
+.menu ul {
+  list-style: none;
+}
+.menu li + li {
+  margin-top: 4px;
+}
+.menu a {
+  display: block;
+  padding: 1rem 1rem;
+  background: #eee;
+  text-decoration: none;
+  color: #000;
+}
+
+/* 8) NESTED INDENTATION */
+.menu ul ul {
+  margin-left: 3rem;
+}
+.menu ul ul ul {
+  margin-left: 4rem;
+}
+.menu ul ul ul ul {
+  margin-left: 5rem;
+}

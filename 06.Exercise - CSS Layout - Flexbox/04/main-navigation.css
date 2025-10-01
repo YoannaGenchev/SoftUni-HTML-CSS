@@ -1,0 +1,47 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background to match screenshot */
+body {
+  background: #eee;
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+/* Outer nav container */
+.nav-bar {
+  background: #f8f8f8;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Inline list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+/* Link “pills” */
+.nav-list a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.3em;
+  text-decoration: none;
+  color: #f90;          /* orange text */
+  font-weight: bold;
+  transition: 0.2s, box-shadow 0.2s;
+}
+
+/* Hover state */
+.nav-list a:hover {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,151 @@
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .home-navbar {
+    flex-direction: row;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 5px 10px;
+  }
+  .home-link,
+   home-link1, 
+   home-link2, 
+   home-link3 {
+    text-decoration: none;
+  }
+
+  .home-link {
+    color: #6f2083;
+    font-weight: bold;
+  }
+
+  .home-cta-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    flex: 3em 0 auto;
+    gap: 0.5em;
+  }
+
+  .home-cta-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    gap: 1em;
+  }
+
+  .home-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .home-hero-text-container {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 32px;
+    align-items: center;
+    order: 2;
+  }
+
+  .home-image1 {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
+    order: 1;
+    margin-bottom: 24px;
+  }
+
+  .home-heading {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .home-text02 {
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+ .home-cta-btn2 {
+   display: inline-block;
+   margin: 16px auto;
+   padding: o.75em 1.5em;
+   text-align: center;
+   width: auto;
+   max-width: 240px;
+}
+
+  .home-image1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .home-features {
+    height: auto;
+    padding: 24px 16px;
+  }
+
+  .home-heading-container {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .home-text03 {
+    margin-bottom: 16px;
+  }
+
+  .home-text04 {
+    line-height: 1.5;
+  }
+
+   .home-cards-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .home-feature-card,
+  .home-feature-card1,
+  .home-feature-card2 {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .home-image2,
+  .home-image3,
+  .home-image4 {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  .home-stats {
+    grid-template-columns: 1fr;
+    padding: 0 0;
+    grid-gap: 20px;
+  }
+}

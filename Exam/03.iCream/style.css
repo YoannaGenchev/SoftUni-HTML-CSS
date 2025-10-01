@@ -1,0 +1,238 @@
+/* 1) IMPORT & RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.top-bar {
+background: linear-gradient(135deg, #ff9ec7, #ffc3e1);
+padding: 25px 0;
+text-align: center;
+color: white;
+font-size: 14px;
+}
+.top-bar .top-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.top-bar .top-links a + a {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid rgba(255,255,255,0.6);
+}
+.top-bar a {
+  color: #fff;
+  margin-left: 1rem;
+}
+.top-social a {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+/* 3) MAIN NAV */
+.main-nav {
+background: white;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+position: fixed;
+top: 7.5vh;
+width: 40vw;
+left: 30vw;
+border-radius: 40px;
+z-index: 10;
+}
+.main-nav nav ul {
+max-width: 1200px;
+list-style: none;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 50px;
+background: white;
+border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.main-nav nav ul li {
+  font-weight: 500;
+}
+.main-nav nav ul li a {
+  color: #040404;
+  text-decoration: none;
+}
+.main-nav .logo {
+  font-size: 2.5rem;        /* тук нагласи големината, която искаш */
+  font-weight: 700;
+  color: #00AEEF; 
+}
+.main-nav .logo span {
+  color: #FF6B9C;
+}
+
+/* 4) HERO */
+.hero {
+  position: relative;
+  background: url('images/carousel-1.jpg') center/cover no-repeat;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.hero-content small {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.btn-pink {
+  background: #f27fa7;
+  color: #fff;
+}
+.btn-pink:hover {
+  opacity: 0.85;
+}
+
+/* 5) ABOUT / FEATURES */
+.about-features {
+  background: #c0e8fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.about-features h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.about-features h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #f27fa7;
+  display: block;
+  margin: 0.5rem auto 2rem;
+}
+.about-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.about-text,
+.features-list {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+.about-text h3,
+.features-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.about-text p,
+.features-list p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+.features-list ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+.features-list li {
+  margin-bottom: 0.75rem;
+}
+.features-list li i {
+  color: #71c93a;
+  margin-right: 0.5rem;
+}
+.features-list .btn-pink {
+  margin-top: 1rem;
+}
+.feature-img img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 6) FOOTER */
+.site-footer {
+  background: #fff;
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+}
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer-logo span {
+  color: #f27fa7;
+}
+.footer-social a {
+  color: #222;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+}
+.footer-info {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-info div {
+  text-align: left;
+}
+.footer-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.footer-info p {
+  font-size: 0. ninerem;
+  color: #555;
+}
+.footer-bottom {
+  font-size: 0. eightrem;
+  color: #777;
+}

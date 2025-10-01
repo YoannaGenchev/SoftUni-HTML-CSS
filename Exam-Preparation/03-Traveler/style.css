@@ -1,0 +1,216 @@
+/* 1) RESET & BOX-SIZING */
+* {
+border-width: 0;
+box-sizing: border-box;
+border-style: solid;
+}
+html {
+  font-family: Karla;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.15;
+  color: black;
+  background-color: white;
+  margin: 0;
+}
+
+/* 2) SITE HEADER */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  z-index: 10;
+}
+.site-header .logo img {
+  height: 50px;
+}
+.site-header nav ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+.site-header nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* 3) HERO */
+#hero {
+  background: url('poster.jpg') no-repeat center center/cover;
+  max-width: 100%;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  filter: brightness(75%);
+}
+#hero .hero-inner {
+  max-width: px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+#hero h1 {
+  font-family: Cormorant Infant;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  z-index: 10;
+  color: white;
+}
+#hero p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* 4) TESTIMONIAL */
+.testimonial {
+  background: #f8f0e9;
+  padding: 4rem 1rem;
+}
+.testimonial .inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial .label {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #555;
+}
+.testimonial blockquote {
+  font-family: 'Cormorant Infant', serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-style: italic;
+  line-height: 1.4;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #3a3a3a;
+}
+
+/* 5) SUPPORT */
+.support {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.support .inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.support h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.support p {
+  font-size: 0.95rem;
+}
+
+/* 6) ARTICLE PREVIEW */
+.article {
+  background: #f8f0e9;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.article .inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+.article h2 {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.article p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.btn-group {
+  display: inline-flex;
+  gap: 1rem;
+}
+.btn-outline {
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+.btn-outline:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 7) CTA */
+.cta {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.cta .inner {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta h2 {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.cta p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: #fcdc3d;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* 8) FOOTER */
+footer {
+  background: #352b2a;
+  color: #aaa;
+  padding: 2rem 1rem;
+}
+.inner-footer {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inner-footer .logo img {
+  height: 24px;
+  margin-bottom: 1rem;
+}
+.inner-footer p {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}

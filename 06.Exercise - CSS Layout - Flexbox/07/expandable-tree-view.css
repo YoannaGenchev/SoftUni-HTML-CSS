@@ -1,0 +1,86 @@
+/* 1) Сброс */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  padding: 2em;
+  background: #fff;
+}
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+/* 2) Базова стилизация на списъците */
+.tree, 
+.tree ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* 3) Скрити чекбоксове */
+.tree input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 4) Лейбъл с +/– кръгче */
+.tree label {
+  position: relative;
+  display: block;
+  padding-left: 2em;
+  margin: 0.25em 0;
+  cursor: pointer;
+  user-select: none;
+}
+.tree label::before {
+  content: '+';
+  position: absolute;
+  left: 0; top: 0;
+  width: 1.2em; height:1.2em;
+  background: green; color:#fff;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+}
+.tree input:checked + label::before {
+  content: '−';
+}
+
+/* 5) Всяко вложено UL */
+.tree ul {
+  border-left: 2px solid #ccc;     /* вертикална линия */
+  margin-left: 1.5em;               /* отстояние за +/– кръгчето */
+}
+
+/* 6) Всеки LI – хоризонтална линия */
+.tree li {
+  position: relative;
+}
+
+/* вместо това ползваме общ селектор, който за всички li рисува хоризонтална линия */
+.tree li {
+  padding-left: 1.5em;               /* текстът остава вдясно от vertical line */
+}
+.tree li::before {
+  content: '';
+  position: absolute;
+  top: 0.6em;                        /* средата на реда */
+  left: 0;                           /* точно на вертикалната линия */
+  width: 1.5em;                      /* до текста */
+  border-top: 2px solid #ccc;
+}
+
+/* 7) Контрол за показване/скриване */
+.tree ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.tree input:checked + label + ul {
+  max-height: 100vh;
+}

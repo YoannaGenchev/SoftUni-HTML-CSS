@@ -1,0 +1,87 @@
+/* 1) RESET & BOX-SIZING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2) FULLVIEWPORT LIGHT GREY BG & CENTER CONTAINER */
+html, body {
+  height: 100%;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* 3) WHITE “CARD” */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* 4) HEADER */
+header {
+  padding: 30px 40px;
+}
+header h1 {
+  font-size: 2rem;
+  color: #28a745; /* green */
+}
+
+/* 5) NAVBAR */
+nav {
+  display: flex;
+  background: #444;
+}
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* 6) MAIN CONTENT + SIDEBAR */
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+main {
+  flex: 2;
+}
+aside {
+  flex: 1;
+}
+
+/* 7) TYPOGRAPHY INSIDE CONTENT */
+main h2,
+aside h2 {
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+}
+main p,
+aside p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* 8) FOOTER */
+footer {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.95rem;
+}

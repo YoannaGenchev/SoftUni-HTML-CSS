@@ -1,0 +1,37 @@
+h2 {
+  margin: 1em 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера и елементите */
+.flex-container {
+  width: 300px;
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  align-items: flex-start;
+  overflow: visible;  /* видим overflow при flex-shrink:0 */
+  margin-bottom: 2em;
+}
+
+.flex-item {
+  flex-basis: 300px;  /* задава основна ширина */
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+  /* flex-shrink по подразбиране: 1 */
+}
+
+/* flex-shrink: 0 за всички деца */
+.flex-shrink-zero .flex-item {
+  flex-shrink: 0;
+}
+
+/* flex-shrink: 0 за всички + override на 2-рото дете */
+.flex-shrink-2nd-only .flex-item {
+  flex-shrink: 0;
+}
+.flex-shrink-2nd-only .flex-item:nth-child(2) {
+  flex-shrink: 1;
+}

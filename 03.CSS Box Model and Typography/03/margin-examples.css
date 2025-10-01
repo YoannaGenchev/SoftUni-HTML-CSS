@@ -1,0 +1,19 @@
+div {
+  border: 1px solid black;
+  font-family: Georgia, serif;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.uniform-margin {
+  margin: 40px;
+}
+
+.non-uniform-margin {
+  margin: 10px 30px 20px 40px;
+}
+
+.negative-margin {
+  margin: -20px;
+}

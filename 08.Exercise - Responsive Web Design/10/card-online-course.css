@@ -1,0 +1,180 @@
+/* 1) RESET + BOX-SIZING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+/* 2) CARD GRID */
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 3) COURSE CARD */
+.course-card {
+  position: relative;
+  width: 320px;
+  background: #ece7e7;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 4) IMAGE + TYPE BADGE */
+.image-wrap {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  padding: 12px;
+  border-radius: 8px;;
+}
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.course-type {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.8em;
+  
+}
+.course-type.live    { background-color: rgba(0, 191, 165, 0.8); }
+.course-type.video   { background-color: rgba(142, 36, 170, 0.8); }
+.course-type.workshop{ background-color: rgba(255, 160, 0, 0.8); }
+
+/* 5) AUTHOR BADGE & AVATAR */
+.author-badge {
+  position: absolute;
+  top: 140px;
+  right: 64px;
+  background: #fff;
+  padding: 6px 9px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-style: bold;
+}
+.author-badge .material-icons {
+  font-size: 1.1rem;
+  margin-right: 4px;
+  color: #555;
+}
+.avatar {
+  position: absolute;
+  top: 110px;
+  right: 6px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* 6) MAIN CONTENT */
+.course-content {
+  background: #fff;                            
+  border-radius: 8px;                           
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);         
+  padding: 16px;                              
+  margin: -1px 5px 3px;
+  top: 140px;                               
+}
+.course-content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+.course-content p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+/* 7) GROUPS HEADER */
+.groups-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin-top: 16px;
+}
+.groups-header h3 {
+  font-size: 1em;
+  color: #333;
+}
+.groups-header a {
+  font-size: 0.9rem;
+  color: #00bfa5;
+  text-decoration: none;
+}
+
+/* 8) GROUP CARD */
+.group-card {
+  display: grid;
+  align-items: center;
+  gap: 8px;
+  background: #fefcfc;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 8px 16px;
+}
+.group-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #555;
+}
+.group-info .material-icons {
+  font-size: 1rem;
+  color: #dad2d2;
+}
+.group-price {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #5c5b5b;
+  justify-self: end;
+}
+
+/* 9) SUMMARY CARD */
+.summary-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 12px;
+  margin: 16px;
+}
+.summary-card .material-icons {
+  font-size: 1.5rem;
+  color: #00bfa5;
+}
+.summary-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #00bfa5;
+}
+.summary-info {
+  font-size: 0.9rem;
+  color: #00bfa5;
+}

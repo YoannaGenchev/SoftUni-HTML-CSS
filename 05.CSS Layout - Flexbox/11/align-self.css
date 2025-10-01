@@ -1,0 +1,43 @@
+
+h2 {
+  margin: 1em 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера */
+.flex-container {
+  display: flex;
+  align-items: flex-start;    /* контейнерът по подразбиране подравнява всички елементи в горната част */
+  width: 400px;
+  height: 200px;              /* фиксирана височина, за да се вижда вертикалното позициониране */
+  padding: 1em;
+  border: 2px solid blue;
+  margin-bottom: 2em;
+}
+
+/* Общи стилове за елементите */
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+/* Специалните случаи: само второто .flex-item получава различен align-self */
+.align-self-flex-start .flex-item:nth-child(2) {
+  align-self: flex-start;
+}
+
+.align-self-center .flex-item:nth-child(2) {
+  align-self: center;
+}
+
+.align-self-flex-end .flex-item:nth-child(2) {
+  align-self: flex-end;
+}
+
+.align-self-baseline .flex-item:nth-child(2) {
+  align-self: baseline;
+  /* За да се види baseline effect, ако искаш можеш да дадеш второто дете по-голям font-size */
+  /* пример: font-size: 2em; */
+}

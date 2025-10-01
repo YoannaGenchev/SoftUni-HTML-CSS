@@ -1,0 +1,36 @@
+body {
+  font-family: Georgia, serif;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Общ стил за div елементите */
+div {
+  width: 380px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* 1. Solid Border */
+.solid-border {
+  border: 4px solid black;
+}
+
+/* 2. Dashed Border */
+.dashed-border {
+  border: 3px dashed #333;
+}
+
+/* 3. Dotted Border */
+.dotted-border {
+  border: 2px dotted #666;
+}
+
+/* 4. Mixed Border */
+.mixed-border {
+  border-top: 3px dashed #333;
+  border-bottom: 3px dashed #333;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+}

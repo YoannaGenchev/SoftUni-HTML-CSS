@@ -1,0 +1,64 @@
+/* reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* типографика */
+html {
+  font: 14px/1.5 Lato, sans-serif;
+}
+body, input, textarea, select, option, button, label {
+  font: inherit;
+}
+
+body {
+  padding: 2em;
+}
+
+/* отстояния */
+h2 {
+  margin-top: 2em;
+}
+
+/* параграфи */
+p {
+  margin-bottom: 1em;
+}
+
+/* стил за code блокове */
+code {
+  display: block;
+  background: #f5f5f5;
+  padding: 1.5em;
+  border-radius: 0.3em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* контейнер за демото */
+.example {
+  margin-top: 1.5em;
+}
+
+/* малко разстояние между отделните радио-бутончета */
+.example p {
+  margin-bottom: 0.5em;
+}
+
+/* стилизиране на радио и label */
+input[type="radio"] {
+  /* запазваме default стил, но може да увеличим мащаба */
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+/* 1. Reset & base (all) */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+}
+
+/* 2. Banner pseudo-element (hidden by default) */
+body::before {
+  display: none;
+  background-color: #369;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+}
+
+/* 3. width = 800px */
+@media (width: 800px) {
+  body::before {
+    display: block;
+    content: 'The viewport width is exactly 800px';
+  }
+}
+
+/* 4. min-width ≥ 800px */
+@media (min-width: 800px) {
+  body::before {
+    display: block;
+    content: 'The viewport width is larger than 800px';
+  }
+}
+
+/* 5. max-width ≤ 800px */
+@media (max-width: 800px) {
+  body::before {
+    display: block;
+    content: 'The viewport width is smaller than 800px';
+  }
+}
+
+/* 6. Headings styling */
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+code {
+  font-family: monospace;
+}

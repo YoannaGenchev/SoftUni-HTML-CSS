@@ -1,0 +1,113 @@
+/* 1) RESET & BOX-SIZING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2) FLUID BASE FONT */
+:root {
+  --min-font: 16px;
+  --max-font: 20px;
+}
+html {
+  /* Base font scales between 16px and 20px as viewport grows */
+  font-size: clamp(var(--min-font), 1.2vw, var(--max-font));
+  line-height: 1.6;
+}
+
+/* 3) BODY & CONTAINER */
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 4) RESPONSIVE HEADINGS */
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5em; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 0.5em; }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.5em; }
+h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); margin-bottom: 0.5em; }
+h5 { font-size: clamp(1.1rem, 2vw, 1.25rem); margin-bottom: 0.5em; }
+h6 { font-size: clamp(1rem, 1.5vw, 1.1rem); margin-bottom: 1em; }
+
+/* 5) HR */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+/* 6) PARAGRAPHS */
+p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+/* 7) LISTS */
+ul, ol {
+  margin: 2em 0 2em 3em;
+}
+ul ul, ul ul ul {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+li {
+  margin-bottom: 0.4em;
+}
+
+/* 8) TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+}
+th, td {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+thead tr {
+  background: #969595;
+}
+tbody tr:nth-child(odd) {
+  background: #bbb7b7;
+}
+
+/* 9) BLOCKQUOTE */
+blockquote {
+  border-left: 4px solid #ddd;
+  font-size: 19px;
+  padding: 1em;
+  margin: 2em 0;
+  font-style: italic;
+}
+blockquote footer {
+  text-align: right;
+  font-style: normal;
+  margin-top: 1em;
+}
+
+/* 10) TAGS */
+.tags {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+/* 11) SMALL SCREEN ADJUSTMENTS */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  table, th, td {
+    font-size: 0.9em;
+  }
+}

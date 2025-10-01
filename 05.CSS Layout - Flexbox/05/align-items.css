@@ -1,0 +1,59 @@
+/* Базови стилове и типография */
+body {
+  font-family: sans-serif;
+  padding: 0em;
+}
+
+h1 {
+  margin-bottom: 1.25em;
+}
+
+h2 {
+  margin: 1.5em 0 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера и елементите */
+.flex-container {
+  width: 400px;
+  height: 200px;           /* фиксирана височина за демонстрация на подравняването */
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  margin-bottom: 2em;      /* отстояние между примерите */
+}
+
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+  /* елементите имат различни текстови размери, за да се види baseline */
+}
+
+/* Класове за align-items */
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+   /* за по-ясна демo, нека зададем различни font-size */
+}
+
+.align-items-baseline .flex-item:nth-child(1) { font-size: 4rem; }
+.align-items-baseline .flex-item:nth-child(2) { font-size: 3rem; }
+.align-items-baseline .flex-item:nth-child(3) { font-size: 2rem; }
+.align-items-baseline .flex-item:nth-child(4) { font-size: 1rem; }

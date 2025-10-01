@@ -1,0 +1,60 @@
+/* 1. Reset и базови стилове */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+/* 3. Grid за точно 3 колони и 3 реда */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* редовете автоматично се добавят според броя на елементите */
+  gap: 2em;              /* разстояние между картите */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 4. “Картата” */
+.photo-card {
+  background: #fff;
+  border: 6px solid #333;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 5. Обвивка за центриране */
+.image-wrapper {
+  flex: 1;                     /* заема пространството до надписа */
+  display: flex;
+  justify-content: center;     /* центрира хоризонтално */
+  align-items: center;         /* центрира вертикално */
+  padding: 1em;                /* отстояние до вътрешната рамка */
+}
+
+/* 6. Снимката */
+.photo-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* 7. Надписът под снимката */
+.photo-card figcaption {
+  margin-top: left;            /* избутва надписа долу */
+  padding: 1em 1em;          /* отстояние от рамката */
+  text-align: left;            /* вляво */
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}

@@ -1,0 +1,21 @@
+body {
+  border: 2px solid green;
+  margin: 0;
+  padding: 2em;
+  font-family: sans-serif;
+}
+
+.container {
+  border: 2px solid blue;
+  width: 60%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.box {
+  border: 2px solid black;
+  margin: 1.5em 0;
+  padding: 3em;
+  text-align: center;
+  font-weight: bold;
+}

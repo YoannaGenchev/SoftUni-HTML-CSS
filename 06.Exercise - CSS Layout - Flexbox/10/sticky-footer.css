@@ -1,0 +1,31 @@
+/* reset & full‐height */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+
+/* green border around the whole page */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid green;
+}
+
+/* header, main, footer all with blue border */
+header,
+main,
+footer {
+  border: 2px solid blue;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* main takes all the remaining space */
+main {
+  flex: 1;
+}

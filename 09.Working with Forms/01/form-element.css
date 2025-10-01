@@ -1,0 +1,58 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* типографика */
+html {
+  font: 14px/1.5 Lato, sans-serif;
+}
+body, input, textarea, select, option, button {
+  font: inherit;
+}
+
+body {
+  padding: 2em;
+}
+
+/* заглавия H2 */
+h2 {
+  margin-top: 2em;
+}
+
+/* стилизирани блокове <code> */
+code {
+  display: block;
+  background: #eee;
+  padding: 2em 2em 0.5em 2em;
+  border-radius: 0.3em;
+  margin: 2em 0;
+  border: 1px solid #ccc;
+  overflow: auto;
+  white-space: pre
+}
+
+/* полета */
+input {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  border: 2px solid #ccc;
+  outline: none;
+}
+input:focus {
+  border-color: #090;
+}
+
+/* бутон за submit */
+button {
+  /* display: inline-block; */
+  /* margin-left: 0.5em; */
+  /* padding: 0.5em 1em; */
+  border: 2px solid gray;
+  background: gray;
+  color: black;
+  /* cursor: pointer; */
+  border-radius: 0.2em;
+}

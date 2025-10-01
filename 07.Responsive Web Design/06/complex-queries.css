@@ -1,0 +1,65 @@
+/* 1. Reset + base (from media-types) */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* 2. Banner pseudo-element (hidden initially) */
+body::before {
+  display: none;
+  background-color: #369;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+}
+
+/* 3. Complex media queries */
+
+/* a) min-width 30em AND landscape */
+@media (min-width: 30em) and (orientation: landscape) {
+  body::before {
+    display: block;
+    content: 'The viewport width is larger than 30 em and the orientation is landscape.';
+  }
+}
+
+/* b) min-height 680px OR (screen AND portrait) */
+@media (min-height: 680px), screen and (orientation: portrait) {
+  body::before {
+    display: block;
+    content: 'The viewport height is larger than 680 px or the media type is screen and the orientation is portrait.';
+  }
+}
+
+/* c) NOT screen and (min-width: 600px) */
+@media not screen and (min-width: 600px) {
+  body::before {
+    display: block;
+    content: 'The viewport is NOT larger than 600 px';
+  }
+}
+
+.source {
+  font-size: 0.9em;
+  color: #555;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+code {
+  font-family: monospace;
+}

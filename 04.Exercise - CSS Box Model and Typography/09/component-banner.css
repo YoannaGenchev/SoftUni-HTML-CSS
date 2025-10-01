@@ -1,0 +1,42 @@
+/* Нулиране на някои базови отстояния */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Секцията-банер */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 700px;               /* височина на банера */
+  background-image: url(images/image1.jpg);
+  background-size: cover;          /* запълва целия елемент */
+  background-position: center;     /* центрира изображението */
+  background-repeat: no-repeat;
+}
+
+/* Текстът вътре в банера */
+.banner-content {
+  position: absolute;              /* поставяме го спрямо .banner */
+  top: 50%;                        /* вертикално по средата */
+  left: 50%;                       /* хоризонтално по средата */
+  transform: translate(-50%, -50%);/* компенсираме с половината от собствените размери */
+  color: #fff;
+  text-align: center;
+  padding: 0 1em;                  /* леко вътрешно отстояние при много тесни екрани */
+}
+
+/* Заглавие и подзаглавие */
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+}

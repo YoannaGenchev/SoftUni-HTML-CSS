@@ -1,0 +1,86 @@
+/* Reset & base (media all) */
+@media all {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+  }
+
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* Banner pseudo-element (hidden by default) */
+body::before {
+  display: none;
+  background-color: #369;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+}
+
+/* hover feature */
+@media (hover: none) {
+  body::before {
+    display: block;
+    content: 'This device doesn\'t support hover';
+  }
+}
+
+/* orientation feature */
+@media (orientation: landscape) {
+  body::before {
+    display: block;
+    content: 'The device is in landscape orientation';
+  }
+}
+
+/* width feature */
+@media (width: 600px) {
+  body::before {
+    display: block;
+    content: 'The viewport width is 600px';
+  }
+}
+
+/* height feature */
+@media (height: 800px) {
+  body::before {
+    display: block;
+    content: 'The viewport height is 800px';
+  }
+}
+
+/* Misc styling */
+h1 {
+  margin-bottom: 0.25em;
+}
+
+.note {
+  margin-bottom: 0.5em;
+  color: #555;
+}
+
+.doclink {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+pre {
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+
+code {
+  font-family: monospace;
+}

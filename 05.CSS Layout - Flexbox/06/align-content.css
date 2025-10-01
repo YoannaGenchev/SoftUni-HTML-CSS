@@ -1,0 +1,54 @@
+/* Базови стилове */
+body {
+  font-family: sans-serif;
+  padding: 0em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 1.5em 0 1em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* Общи стилове за flex контейнера и елементите */
+.flex-container {
+  width: 400px;
+  height: 200px;        /* фиксирана височина за демонстрация */
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;      /* редове се пренасят */
+  align-items: flex-start; /* всички редове започват от горе */
+  margin-bottom: 2em;
+}
+
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+/* Класове за align-content */
+.align-content-flex-start {
+  align-content: flex-start;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-flex-end {
+  align-content: flex-end;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}

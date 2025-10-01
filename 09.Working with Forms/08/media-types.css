@@ -1,0 +1,85 @@
+/* --- RESET --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- TYPOGRAPHY --- */
+html {
+  font: 14px/1.5 Lato, sans-serif;
+}
+body, input, textarea, select, option {
+  font: inherit;
+}
+
+body {
+  padding: 2em;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+/* --- CODE BLOCK --- */
+code {
+  display: block;
+  padding: 2em 2em 0.5em 2em;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  margin: 1em 0;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* --- FORM-ELEMENT BASE INPUT STYLES --- */
+input {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+  border: 2px solid #ccc;
+  border-radius: 0.3em;
+  outline: none;
+}
+input:focus {
+  border-color: #090;
+}
+
+/* --- FIELDSET STYLES --- */
+fieldset {
+  padding: 2em;
+  border: 2px solid #ccc;
+  max-width: 50ch;
+}
+
+/* легенда */
+fieldset > legend {
+  padding: 0 1em;
+  font-weight: bold;
+}
+
+/* етикети в полето */
+fieldset label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* полета вътре в полето */
+fieldset input[type="text"],
+fieldset input[type="password"],
+fieldset input[type="submit"] {
+  display: block;
+  width: 100%;
+}
+
+/* разстояние между редовете */
+.field {
+  padding-bottom: 1.5em;
+}
+
+/* стилизация на бутона */
+fieldset input[type="submit"] {
+  background: #eee;
+  cursor: pointer;
+}

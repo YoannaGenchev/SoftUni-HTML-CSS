@@ -1,0 +1,245 @@
+p, h1, h2, h3, h4, ul, li, img, a, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0e0e;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  padding: 1em 1.5em;
+}
+.btn {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: auto;
+}
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.nav-links a {
+  margin-left: 1.5em;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('img/movies/city-under-the-fire-bg.webp');
+  height: 600px;
+  background-size: cover;
+  background-position: top;
+  align-items: top;
+  position: relative;
+  border-radius: 10px;
+  padding: 1.5em 1.5em;
+}
+.hero-content {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  max-width: 45%;
+}
+.hero-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 0.5em;
+}
+.hero-content p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.now-streaming {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  color: #e50914;
+}
+.hero-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.tags span {
+  display: inline-block;
+  background-color: rgba(47, 46, 46, 0.6);
+  padding: 0.25em 0.5em;
+  border-radius: 10px;
+  margin-right: 0.5em;
+  font-size: 0.85em;
+}
+.stats {
+  margin: 0.75em 0;
+  font-size: 0.9em;
+}
+.watch-btn {
+  margin-top: 1em;
+}
+
+.continue {
+  margin: 3em 0 1.5em;
+}
+.continue h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.continue .card {
+  position: relative;
+  width: 200px;
+  display: inline-block;
+  margin-right: 1.5em;
+}
+.continue .card img {
+  width: 100%;
+  border-radius: 4px;
+}
+.continue .card p {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.continue .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #949292;
+  border-radius: 15px;
+  background: linear-gradient(
+    to right,
+    #e50914 0%,
+    #e50914 40%,
+    #949292 40%,
+    #949292 100%
+  );
+}
+
+.top-picks {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.top-picks h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.top-picks .cards {
+  display: flex;
+  gap: 1.5em;
+  overflow-x: auto;
+  padding-bottom: 0.5em;
+}
+.top-picks .card {
+  flex: 0 0 auto;
+  width: 180px;
+}
+.top-picks .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.coming {
+  margin-bottom: 2em;
+}
+.coming h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.coming-card {
+  display: flex;
+  gap: 1em;
+  background-color: #2a2828;
+  padding: 1em;
+  border-radius: 10px;
+  align-items: center;
+}
+.coming-card img {
+  width: 150px;
+  border-radius: 10px;
+}
+.coming-info h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: -0.5em;
+}
+.coming-info p {
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+.reminder-btn {
+  font-size: 0.9em;
+}
+
+.genres {
+  margin-bottom: 2em;
+}
+.genres h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+.genre-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+.genre-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+}
+.genre-icons img {
+  width: 50px;
+  height: 50px;
+  background-color: #1f1f1f;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+footer.register {
+  padding: 1em 0;
+  border-top: 2px solid #c4c3c3;
+  text-align: center;
+}
+footer.register h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+footer.register p {
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+}

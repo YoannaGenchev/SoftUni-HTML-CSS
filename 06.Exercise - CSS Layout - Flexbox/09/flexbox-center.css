@@ -1,0 +1,52 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  background: #eee;
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+  padding: 2em;
+}
+
+/* Typography inside the card */
+.card h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.card ul {
+  margin-left: 1.25em;
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.card ul li {
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+}

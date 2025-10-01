@@ -1,0 +1,66 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  font: 14px/1.5 Lato, sans-serif;
+}
+
+/* Карта (card) */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 800px;
+  padding: 1.5em;
+}
+
+/* Flex контейнер */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+/* Общ стил за всеки блок */
+.item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* Header & Footer заемат цял ред */
+.header,
+.footer {
+  flex: 1 1 100%;
+}
+
+/* Main content взима останалото място */
+.main {
+  flex: 1 1 0;
+  min-width: 200px;
+}
+
+/* Sidebar е фиксирана ширина */
+.sidebar {
+  flex: 0 1 200px;
+}
+
+/* Custom order: разменяме main и sidebar */
+.custom-order .main {
+  order: 2;
+}
+.custom-order .sidebar {
+  order: 1;
+}

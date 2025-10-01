@@ -1,0 +1,39 @@
+h1 {
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin: 1em 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Общи стилове за всички .flex-container и .flex-item */
+.flex-container {
+  width: 400px;
+  padding: 1em;
+  border: 2px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.flex-item {
+  background: #eee;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+/* Специфични класове за gap */
+.gap-row {
+  gap: 2em 0;
+}
+
+.gap-column {
+  gap: 0 2em;
+}
+
+.gap {
+  gap: 2em;
+}
